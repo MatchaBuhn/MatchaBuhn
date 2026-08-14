@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MatchaBuhn — cute, cozy, matcha-inspired clothing and gifts.">
+  <title>MatchaBuhn ♡ Cute. Cozy. Matcha You.</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="site-frame">
+    <header class="header">
+      <button class="icon-button menu-button" id="menuButton" aria-label="Open navigation">☰</button>
+      <a class="logo" href="#home" aria-label="MatchaBuhn home">
+        <span>Matcha</span><b>Buhn</b><i>♡</i>
+      </a>
+      <nav id="nav" class="nav">
+        <a class="active" href="#home">HOME</a>
+        <a href="#shop">SHOP</a>
+        <a href="#about">ABOUT</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact">CONTACT</a>
+      </nav>
+      <div class="header-actions">
+        <button class="icon-button" id="searchButton" aria-label="Search">⌕</button>
+        <button class="icon-button" id="cartButton" aria-label="Shopping cart">🛒<span id="cartCount">0</span></button>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <span class="sticker s1">🐰</span>
+        <span class="sticker s2">♡</span>
+        <span class="sticker s3">✦</span>
+        <span class="sticker s4">🐇</span>
+        <div class="hero-copy">
+          <div class="eyebrow">♡ WELCOME TO MATCHABUHN ♡</div>
+          <h1><span>CUTE. COZY.</span><strong>MATCHA YOU.</strong></h1>
+          <p>Kawaii style, matcha vibes.<br>Cozy sweatshirts, hoodies & more<br>made to keep you comfy & cute! ♡</p>
+          <div class="buttons">
+            <a class="button pink" href="#shop">SHOP NOW</a>
+            <a class="button white" href="#about">ABOUT US</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sparkle">✧</div>
+          <div class="bunny">🐰</div>
+          <div class="matcha-cup">🍵</div>
+          <div class="heart">♡</div>
+        </div>
+      </section>
+
+      <section id="shop" class="shop section">
+        <div class="section-heading">
+          <div>
+            <span class="mini-title">♡ MADE FOR MATCHA LOVERS ♡</span>
+            <h2>FEATURED PRODUCTS <em>♥</em></h2>
+          </div>
+          <button class="view-all" id="viewAll">VIEW ALL →</button>
+        </div>
+        <div class="search-row" id="searchRow">
+          <input id="searchInput" type="search" placeholder="Search MatchaBuhn..." aria-label="Search products">
+        </div>
+        <div class="product-grid" id="productGrid"></div>
+      </section>
+
+      <section class="benefits">
+        <div><span>🚚</span><b>FREE SHIPPING</b><small>On orders over $75</small></div>
+        <div><span>♡</span><b>MADE WITH LOVE</b><small>Kawaii designs for you</small></div>
+        <div><span>✦</span><b>SECURE CHECKOUT</b><small>Safe & easy shopping</small></div>
+        <div><span>✉</span><b>CUTE UPDATES</b><small>Join our email list</small></div>
+      </section>
+
+      <section id="about" class="about section">
+        <div class="about-card">
+          <span class="mini-title">♡ A LITTLE ABOUT US ♡</span>
+          <h2>WELCOME TO <span>MATCHABUHN</span></h2>
+          <p>MatchaBuhn is a cozy little world inspired by matcha, soft colors, cute bunnies, and the joy of wearing something that makes you smile.</p>
+          <p>Every design is made to feel playful, comfy, and a little bit magical. 🍵🐰</p>
+        </div>
+        <div class="about-art">🐰<small>matcha<br>makes everything<br>cuter ♡</small>🍵</div>
+      </section>
+
+      <section id="faq" class="faq section">
+        <span class="mini-title">♡ QUESTIONS? ♡</span>
+        <h2>FAQ</h2>
+        <details><summary>How long does shipping take?</summary><p>Shipping times will depend on the shipping option and fulfillment service you choose. Add your real shipping policy here before launch.</p></details>
+        <details><summary>What sizes are available?</summary><p>Each product can have its own available sizes. Update the product information in the JavaScript file when you're ready to add your real inventory.</p></details>
+        <details><summary>Do you accept returns?</summary><p>Add your final return and exchange policy here before accepting orders.</p></details>
+      </section>
+
+      <section id="contact" class="contact section">
+        <div>
+          <span class="mini-title">♡ SAY HI ♡</span>
+          <h2>CONTACT MATCHABUHN</h2>
+          <p>Have a question about an order or product? Send us a message.</p>
+        </div>
+        <form id="contactForm" class="contact-form">
+          <input name="name" placeholder="Your name" required>
+          <input name="email" type="email" placeholder="Your email" required>
+          <textarea name="message" rows="5" placeholder="Your message..." required></textarea>
+          <button class="button pink" type="submit">SEND MESSAGE ♡</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-brand">
+        <div class="logo"><span>Matcha</span><b>Buhn</b><i>♡</i></div>
+        <p>Soft, cozy & a little matcha magic. 🍵🐰</p>
+      </div>
+      <div><h3>SHOP</h3><a href="#shop">All Products</a><a href="#contact">Contact</a></div>
+      <div><h3>HELP</h3><a href="#faq">FAQ</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+      <div><h3>FOLLOW ALONG ♡</h3><p>@matchabuhn</p></div>
+      <div class="copyright">© <span id="year"></span> MatchaBuhn · Made with ♡</div>
+    </footer>
+  </div>
+
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+    <div class="drawer-head"><h2>Your Cart ♡</h2><button id="closeCart">×</button></div>
+    <div id="cartItems" class="cart-items"></div>
+    <div class="cart-bottom">
+      <div class="total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
+      <button class="button pink checkout" id="checkoutButton">CHECKOUT →</button>
+      <small>Checkout is a demo until you connect a payment provider.</small>
+    </div>
+  </aside>
+  <div class="overlay" id="overlay"></div>
+
+  <dialog id="productDialog" class="product-dialog">
+    <button class="dialog-close" id="closeDialog">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>

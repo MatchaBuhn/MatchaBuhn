@@ -22,7 +22,9 @@
         <a href="#contact">CONTACT</a>
       </nav>
       <div class="header-actions">
-        <button class="icon-button" id="searchButton" aria-label="Search">⌕</button>
+  <button class="icon-button" id="searchButton" aria-label="Search">⌕</button>
+  <button class="icon-button" id="cartButton" aria-label="Shopping cart">🛒<span id="cartCount">0</span></button>
+</div>
         
       </div>
     </header>
@@ -126,7 +128,29 @@
     </div>
   </aside>
   
+<aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+  <div class="drawer-head">
+    <h2>Your Cart ♡</h2>
+    <button id="closeCart">×</button>
+  </div>
 
+  <div id="cartItems" class="cart-items"></div>
+
+  <div class="cart-bottom">
+    <div class="total">
+      <span>Total</span>
+      <strong id="cartTotal">$0.00</strong>
+    </div>
+
+    <button class="button pink checkout" id="checkoutButton">
+      CHECKOUT →
+    </button>
+
+    <small>Checkout is a demo until you connect a payment provider.</small>
+  </div>
+</aside>
+
+<div class="overlay" id="overlay"></div>
   <dialog id="productDialog" class="product-dialog">
     <button class="dialog-close" id="closeDialog">×</button>
     <div id="dialogContent"></div>

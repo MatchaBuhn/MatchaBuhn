@@ -4,7 +4,7 @@ const product = {
   price: 3.99,
   image: "images/kawaii-mochi-sticker-pack-cover.png",
   desc: "A cute digital sticker pack featuring kawaii mochi designs. Includes transparent PNG stickers and a thank-you note.",
-  buyUrl: "#"
+  buyUrl: "https://kaliyah40.gumroad.com/l/kawaii-mochi-sticker-pack"
 };
 
 const $ = id => document.getElementById(id);

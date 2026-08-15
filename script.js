@@ -153,7 +153,7 @@ $("contactForm").addEventListener("submit", event => {
 });
 
 $("cartButton").onclick = () => {
-  alert("The shopping cart is currently unavailable for digital downloads. Please use BUY NOW ♡.");
+  alert("Digital downloads are purchased through the BUY NOW ♡ button.");
 };
 
 $("closeCart").onclick = () => {

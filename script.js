@@ -148,8 +148,8 @@ $("contactForm").addEventListener("submit", event => {
     `Name: ${data.get("name")}\nEmail: ${data.get("email")}\n\n${data.get("message")}`
   );
 
-  window.location.href =
-    `mailto:YOUR-EMAIL@example.com?subject=${subject}&body=${body}`;
+ window.location.href =
+  `mailto:shopmatchabuhn@gmail.com?subject=${subject}&body=${body}`;
 });
 
 $("cartButton").onclick = () => {

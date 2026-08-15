@@ -129,44 +129,23 @@
     </footer>
   </div>
 
-  
-    <div class="drawer-head"><h2>Your Cart ♡</h2><button id="closeCart">×</button></div>
-    <div id="cartItems" class="cart-items"></div>
-    <div class="cart-bottom">
-      <div class="total"><span>Total</span><strong id="cartTotal">$0.00</strong></div>
-      <button class="button pink checkout" id="checkoutButton">CHECKOUT →</button>
-      <small>Checkout is a demo until you connect a payment provider.</small>
-    </div>
-  </aside>
-  
-
-  <div class="drawer-head">
-    <h2>Your Cart ♡</h2>
-    <button id="closeCart">×</button>
+  <footer class="footer">
+  <div class="footer-brand">
+    <div class="logo"><span>Matcha</span><b>Buhn</b><i>♡</i></div>
+    <p>Soft, cozy & a little matcha magic. 🍵🐰</p>
   </div>
+  <div><h3>SHOP</h3><a href="#shop">All Products</a><a href="#contact">Contact</a></div>
+  <div><h3>HELP</h3><a href="#faq">FAQ</a><a href="#">Privacy</a><a href="#">Terms</a></div>
+  <div><h3>CONTACT US♡</h3><p>shopmatchabuhn@gmail.com</p></div>
+  <div class="copyright">© <span id="year"></span> MatchaBuhn · Made with ♡</div>
+</footer>
+</div>
 
-  <div id="cartItems" class="cart-items"></div>
+<dialog id="productDialog" class="product-dialog">
+  <button class="dialog-close" id="closeDialog">×</button>
+  <div id="dialogContent"></div>
+</dialog>
 
-  <div class="cart-bottom">
-    <div class="total">
-      <span>Total</span>
-      <strong id="cartTotal">$0.00</strong>
-    </div>
-
-    <button class="button pink checkout" id="checkoutButton">
-      CHECKOUT →
-    </button>
-
-    <small>Checkout is a demo until you connect a payment provider.</small>
-  </div>
-</aside>
-
-
-  <dialog id="productDialog" class="product-dialog">
-    <button class="dialog-close" id="closeDialog">×</button>
-    <div id="dialogContent"></div>
-  </dialog>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>

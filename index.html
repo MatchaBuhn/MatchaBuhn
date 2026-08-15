@@ -1,3 +1,6 @@
+# MatchaBuhn `index.html`
+
+```html
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,9 +25,7 @@
         <a href="#contact">CONTACT</a>
       </nav>
       <div class="header-actions">
-  <button class="icon-button" id="searchButton" aria-label="Search">⌕</button>
-</div>
-        
+        <button class="icon-button" id="searchButton" aria-label="Search">⌕</button>
       </div>
     </header>
 
@@ -59,9 +60,11 @@
           </div>
           <button class="view-all" id="viewAll">VIEW ALL →</button>
         </div>
+
         <div class="search-row" id="searchRow">
           <input id="searchInput" type="search" placeholder="Search MatchaBuhn..." aria-label="Search products">
         </div>
+
         <div class="product-grid" id="productGrid"></div>
       </section>
 
@@ -82,25 +85,25 @@
         <div class="about-art">🐰<small>matcha<br>makes everything<br>cuter ♡</small>🍵</div>
       </section>
 
-     <section id="faq" class="faq section">
-  <span class="mini-title">♡ QUESTIONS? ♡</span>
-  <h2>FAQ</h2>
+      <section id="faq" class="faq section">
+        <span class="mini-title">♡ QUESTIONS? ♡</span>
+        <h2>FAQ</h2>
 
-  <details>
-    <summary>How long does shipping take?</summary>
-    <p>This is a digital product, so there is no physical shipping. Your Sticker Pack is available for download after your purchase is completed through Gumroad.</p>
-  </details>
+        <details>
+          <summary>How long does shipping take?</summary>
+          <p>This is a digital product, so there is no physical shipping. Your Sticker Pack is available for download after your purchase is completed through Gumroad.</p>
+        </details>
 
-  <details>
-    <summary>What sizes are available?</summary>
-    <p>The Sticker Pack includes transparent PNG sticker files. Sizes are XS — 2" × 2", S — 3" × 3", M — 4" × 4", and L — 5.5" × 5.5". The stickers are ready for digital use after purchase, as well as physical printing and cutting.</p>
-  </details>
+        <details>
+          <summary>What sizes are available?</summary>
+          <p>The Sticker Pack includes transparent PNG sticker files. Sizes are XS — 2" × 2", S — 3" × 3", M — 4" × 4", and L — 5.5" × 5.5". The stickers are ready for digital use after purchase, as well as physical printing and cutting.</p>
+        </details>
 
-  <details>
-    <summary>Do you accept returns?</summary>
-    <p>Digital products are delivered instantly after purchase in your digital files, meaning all digital sales are final. Please review the product details before purchasing.</p>
-  </details>
-</section>
+        <details>
+          <summary>Do you accept returns?</summary>
+          <p>Digital products are delivered instantly after purchase in your digital files, meaning all digital sales are final. Please review the product details before purchasing.</p>
+        </details>
+      </section>
 
       <section id="contact" class="contact section">
         <div>
@@ -108,6 +111,7 @@
           <h2>CONTACT MATCHABUHN</h2>
           <p>Have a question about an order or product? Send us a message.</p>
         </div>
+
         <form id="contactForm" class="contact-form">
           <input name="name" placeholder="Your name" required>
           <input name="email" type="email" placeholder="Your email" required>
@@ -122,30 +126,36 @@
         <div class="logo"><span>Matcha</span><b>Buhn</b><i>♡</i></div>
         <p>Soft, cozy & a little matcha magic. 🍵🐰</p>
       </div>
-      <div><h3>SHOP</h3><a href="#shop">All Products</a><a href="#contact">Contact</a></div>
-      <div><h3>HELP</h3><a href="#faq">FAQ</a><a href="#">Privacy</a><a href="#">Terms</a></div>
-      <div><h3>CONTACT US♡</h3><p>shopmatchabuhn@gmail.com</p></div>
+
+      <div>
+        <h3>SHOP</h3>
+        <a href="#shop">All Products</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <div>
+        <h3>HELP</h3>
+        <a href="#faq">FAQ</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+
+      <div>
+        <h3>CONTACT US♡</h3>
+        <p>shopmatchabuhn@gmail.com</p>
+      </div>
+
       <div class="copyright">© <span id="year"></span> MatchaBuhn · Made with ♡</div>
     </footer>
   </div>
 
-  <footer class="footer">
-  <div class="footer-brand">
-    <div class="logo"><span>Matcha</span><b>Buhn</b><i>♡</i></div>
-    <p>Soft, cozy & a little matcha magic. 🍵🐰</p>
-  </div>
-  <div><h3>SHOP</h3><a href="#shop">All Products</a><a href="#contact">Contact</a></div>
-  <div><h3>HELP</h3><a href="#faq">FAQ</a><a href="#">Privacy</a><a href="#">Terms</a></div>
-  <div><h3>CONTACT US♡</h3><p>shopmatchabuhn@gmail.com</p></div>
-  <div class="copyright">© <span id="year"></span> MatchaBuhn · Made with ♡</div>
-</footer>
-</div>
+  <dialog id="productDialog" class="product-dialog">
+    <button class="dialog-close" id="closeDialog">×</button>
+    <div id="dialogContent"></div>
+  </dialog>
 
-<dialog id="productDialog" class="product-dialog">
-  <button class="dialog-close" id="closeDialog">×</button>
-  <div id="dialogContent"></div>
-</dialog>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
+```
+
